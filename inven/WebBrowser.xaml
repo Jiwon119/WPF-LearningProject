@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="inven.WebBrowser"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:wpf="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
+             xmlns:local="clr-namespace:inven"
+             mc:Ignorable="d" 
+             d:DesignHeight="1080" d:DesignWidth="1920">
+    <Grid x:Name="WebGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Button x:Name="HomeBtn" Grid.Row="0" Click="HomeBtn_Click">
+            <Image Source="img/home.png"/>
+        </Button>
+
+        <!-- Browser -->
+        <wpf:ChromiumWebBrowser
+            x:Name="browser" Grid.Row="1" Grid.RowSpan="2">
+        </wpf:ChromiumWebBrowser>
+    </Grid>
+</UserControl>

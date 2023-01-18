@@ -1,0 +1,75 @@
+﻿<UserControl x:Class="inven.HotIssue"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:inven"
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="800">
+    
+    <UserControl.Resources>
+        <Style TargetType="Label">
+            <Setter Property="Opacity" Value="0.8"/>
+            <Setter Property="Background" Value="Black"/>
+            <Setter Property="Foreground" Value="Gray"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Foreground" Value="White"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid>
+        <Button Click="Btn_Click">
+            <StackPanel Width="800"  x:Name="panel" Orientation="Vertical" Margin="10,0,0,10">
+                <StackPanel.Background>
+                    <ImageBrush x:Name="background" ImageSource="img/UC2/1.jpg"/>
+                </StackPanel.Background>
+
+                <Label Name="Label1" MouseEnter="OnMouseEnterHandler"
+                    HorizontalAlignment="Right" Width="150" Height="40" Margin="0,10,10,3"
+                    FontSize="14" FontWeight="Bold" Foreground="White">
+                    V4 1,000일</Label>
+
+                <Label Name="Label2" MouseEnter="OnMouseEnterHandler"
+                    HorizontalAlignment="Right" Width="150" Height="40"  Margin="0,0,10,3"
+                    FontSize="14" FontWeight="Bold">
+                    PC판 거미-맨</Label>
+
+                <Label Name="Label3" MouseEnter="OnMouseEnterHandler"
+                    HorizontalAlignment="Right" Width="150" Height="40"  Margin="0,0,10,3"
+                    FontSize="14" FontWeight="Bold">
+                    타워 오브 판타지</Label>
+
+                <Label Name="Label4" MouseEnter="OnMouseEnterHandler"
+                    HorizontalAlignment="Right" Width="150" Height="40" Margin="0,0,10,3"
+                    FontSize="14" FontWeight="Bold">
+                    니케 CBT</Label>
+
+                <Label Name="Label5" MouseEnter="OnMouseEnterHandler"
+                    HorizontalAlignment="Right" Width="150" Height="40" Margin="0,0,10,3"
+                    FontSize="14" FontWeight="Bold">
+                    몬스터헌터</Label>
+
+                <Label Name="Label6" MouseEnter="OnMouseEnterHandler"
+                    HorizontalAlignment="Right" Width="150" Height="40" Margin="0,0,10,3"
+                    FontSize="14" FontWeight="Bold">
+                    대항해시대 오리진</Label>
+
+                <Label  Name="Label7" MouseEnter="OnMouseEnterHandler"
+                    HorizontalAlignment="Right" Width="150" Height="40" Margin="0,0,10,3"
+                    FontSize="14" FontWeight="Bold">
+                    8월 1주차</Label>
+
+                <Label Name="LabelText" VerticalAlignment="Bottom" Margin="0,20,0,0" Height="60"
+                       FontSize="22" Foreground="White"
+                       Content="3주년을 앞두고 1:1 거래 추가를 예고한 V4, 또다른 비전은?">
+                </Label>
+            </StackPanel>
+        </Button>
+    </Grid>
+</UserControl>

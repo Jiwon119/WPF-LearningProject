@@ -1,0 +1,70 @@
+﻿<UserControl x:Class="inven.News_List"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:inven"
+             mc:Ignorable="d" 
+             d:DesignHeight="220" d:DesignWidth="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0" Margin="10,10,5,10">
+            <Button x:Name="News1" Click="Btn_Click">
+                <StackPanel Orientation="Vertical">
+                    <Image x:Name="Img_1" Stretch="Fill" Height="140" Source="img/UC3/HotNews/1.jpg"></Image>
+                    <Label Height="60">
+                        <AccessText x:Name="Content_1" TextWrapping="WrapWithOverflow">
+
+                        </AccessText>
+                    </Label>
+                </StackPanel>
+            </Button>
+        </Grid>
+        
+        <Grid Grid.Column="1" Margin="0,10,5,10">
+            <Button x:Name="News2" Click="Btn_Click">
+                <StackPanel Orientation="Vertical">
+                    <Image x:Name="Img_2" Stretch="Fill" Height="140" Source="img/UC3/HotNews/2.jpg"></Image>
+                    <Label Height="60">
+                        <AccessText x:Name="Content_2" TextWrapping="WrapWithOverflow">
+                        </AccessText>
+                    </Label>
+                </StackPanel>
+            </Button>
+        </Grid>
+        
+        <Grid Grid.Column="2" Margin="0,10,5,10">
+            <Button x:Name="News3" Click="Btn_Click">
+                <StackPanel Orientation="Vertical">
+                    <Image x:Name="Img_3" Stretch="Fill" Height="140" Source="img/UC3/HotNews/3.jpg"></Image>
+                    <Label Height="60">
+                        <AccessText x:Name="Content_3" TextWrapping="WrapWithOverflow">
+
+                        </AccessText>
+                    </Label>
+                </StackPanel>
+            </Button>
+        </Grid>
+        <Grid Grid.Column="3" Margin="0,10,5,10">
+            <Button x:Name="News4" Click="Btn_Click">
+                <StackPanel Orientation="Vertical">
+                    <Image x:Name="Img_4" Stretch="Fill" Height="140" Source="img/UC3/HotNews/4.jpg"></Image>
+                    <Label Height="60">
+                        <AccessText x:Name="Content_4" TextWrapping="WrapWithOverflow">
+
+                        </AccessText>
+                    </Label>
+                </StackPanel>
+            </Button>
+        </Grid>
+  
+
+
+    </Grid>
+</UserControl>
