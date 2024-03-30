@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="User">
+    <EntitySetMapping Name="INFO">
+      <EntityTypeMapping TypeName="Model.INFO">
+        <MappingFragment StoreEntitySet="INFO">
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+          <ScalarProperty Name="USER_PHON" ColumnName="USER_PHON" />
+          <ScalarProperty Name="USER_AREA" ColumnName="USER_AREA" />
+          <ScalarProperty Name="CRE_DATE" ColumnName="CRE_DATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

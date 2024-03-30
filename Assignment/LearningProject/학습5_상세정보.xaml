@@ -1,0 +1,62 @@
+﻿<UserControl x:Class="LearningProject.학습5_상세정보"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LearningProject"
+             mc:Ignorable="d" 
+             d:DesignHeight="250" d:DesignWidth="800">
+    <Grid>
+        <Border Grid.Row="1" BorderBrush="Black">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="1.5*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                
+                <Label FontSize="14" FontWeight="Bold"
+                       HorizontalContentAlignment="Left" VerticalContentAlignment="Bottom"
+                       Grid.Column="0" Grid.Row="0" Content="이름"/>
+                <Label FontSize="14" FontWeight="Bold"
+                       HorizontalContentAlignment="Left" VerticalContentAlignment="Bottom"
+                       Grid.Column="1" Grid.Row="0" Content="전화번호"/>
+                <Label FontSize="14" FontWeight="Bold"
+                       HorizontalContentAlignment="Left" VerticalContentAlignment="Bottom"
+                       Grid.Column="2" Grid.Row="0" Content="거주지"/>
+                <Label FontSize="14" FontWeight="Bold"
+                       HorizontalContentAlignment="Left" VerticalContentAlignment="Bottom"
+                       Grid.Column="3" Grid.Row="0" Content="날짜"/>
+
+
+                <TextBox x:Name="Tname" BorderBrush="Gray" BorderThickness="2" MinHeight="20"
+                         HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                         Grid.Column="0" Grid.Row="1" Text=""/>
+                <TextBox x:Name="Tphon" BorderBrush="Gray" BorderThickness="0,2,2,2" MinHeight="20"
+                         HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                         Grid.Column="1" Grid.Row="1" Text=""/>
+                <TextBox x:Name="Tarea" BorderBrush="Gray" BorderThickness="0,2,2,2" MinHeight="20"
+                         HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                         Grid.Column="2" Grid.Row="1" Text=""/>
+                <Label x:Name="Tdate" BorderBrush="Gray" BorderThickness="0,2,2,2" MinHeight="20"
+                         HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                         Grid.Column="3" Grid.Row="1" Content=""/>
+                
+                <Grid Grid.Row="2" Grid.ColumnSpan="4">
+                    <StackPanel Orientation="Horizontal">
+                        <Button Background="White" BorderThickness="2" Width="100" Margin="10,20,10,10" Click="Button_Click_1">Create</Button>
+                        <Button Background="White" BorderThickness="2" Width="100" Margin="10,20,10,10" Click="Button_Click_2">Update</Button>
+                        <Button Background="White" BorderThickness="2" Width="100" Margin="10,20,10,10" Click="Button_Click_3">Delete</Button>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </Border>
+
+    </Grid>
+</UserControl>
